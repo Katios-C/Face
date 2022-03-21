@@ -2,23 +2,19 @@ import SwiftUI
 
 struct ContentView: View {
     
-    
     @ObservedObject private var faceViewModel = FaceViewModel()
     
     @State private var image: Image?
-    @State private var imageInter: Image?
     @State private var inputImage: UIImage?
     @State private var showingImagePicker = false
     @State private var isProccesed = false
-    // @State private var
-
+    
+    
     
     var body: some View {
-        
         VStack {
             isProccesed ?
             VStack {
-                
                 Image(uiImage: faceViewModel.drawImg(inputImage!))
                     .resizable()
                     .scaledToFit()
@@ -58,12 +54,9 @@ struct ContentView: View {
             loadImage()}
         .sheet(isPresented: $showingImagePicker) {
             ImagePicker(image: $inputImage)
-            
         }
-        
     }
     func loadImage() {
-        
         guard let inputImage = inputImage else { return }
         image = Image(uiImage: inputImage)
         
