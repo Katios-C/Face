@@ -16,6 +16,10 @@
 		954E9BE227E838A0002E19EF /* FaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954E9BE127E838A0002E19EF /* FaceTests.swift */; };
 		954E9BEC27E838A0002E19EF /* FaceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954E9BEB27E838A0002E19EF /* FaceUITests.swift */; };
 		954E9BEE27E838A0002E19EF /* FaceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954E9BED27E838A0002E19EF /* FaceUITestsLaunchTests.swift */; };
+		959014F327E84F69002BBF23 /* GoogleService-Info-3.plist in Resources */ = {isa = PBXBuildFile; fileRef = 959014F227E84F69002BBF23 /* GoogleService-Info-3.plist */; };
+		959014F527E8510A002BBF23 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959014F427E8510A002BBF23 /* ImagePicker.swift */; };
+		959014F727E85122002BBF23 /* FaceDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959014F627E85122002BBF23 /* FaceDetection.swift */; };
+		959014F927E85141002BBF23 /* FaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959014F827E85141002BBF23 /* FaceViewModel.swift */; };
 		D69DF900B1B677482808797F /* Pods_Face_FaceUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB00A78DDDB7DDEC290CBB1F /* Pods_Face_FaceUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +54,10 @@
 		954E9BE727E838A0002E19EF /* FaceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FaceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		954E9BEB27E838A0002E19EF /* FaceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceUITests.swift; sourceTree = "<group>"; };
 		954E9BED27E838A0002E19EF /* FaceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		959014F227E84F69002BBF23 /* GoogleService-Info-3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-3.plist"; sourceTree = "<group>"; };
+		959014F427E8510A002BBF23 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		959014F627E85122002BBF23 /* FaceDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceDetection.swift; sourceTree = "<group>"; };
+		959014F827E85141002BBF23 /* FaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceViewModel.swift; sourceTree = "<group>"; };
 		9FCA6F881602834E66336E2E /* Pods-Face-FaceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Face-FaceUITests.debug.xcconfig"; path = "Target Support Files/Pods-Face-FaceUITests/Pods-Face-FaceUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C1F1491452AF45FB6067DF78 /* Pods-FaceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceTests.debug.xcconfig"; path = "Target Support Files/Pods-FaceTests/Pods-FaceTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CB00A78DDDB7DDEC290CBB1F /* Pods_Face_FaceUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Face_FaceUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,7 +114,6 @@
 				C1F1491452AF45FB6067DF78 /* Pods-FaceTests.debug.xcconfig */,
 				4BB2D603ACC159D789E89A76 /* Pods-FaceTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -136,7 +143,11 @@
 			isa = PBXGroup;
 			children = (
 				954E9BD027E8389F002E19EF /* FaceApp.swift */,
+				959014F227E84F69002BBF23 /* GoogleService-Info-3.plist */,
 				954E9BD227E8389F002E19EF /* ContentView.swift */,
+				959014F427E8510A002BBF23 /* ImagePicker.swift */,
+				959014F627E85122002BBF23 /* FaceDetection.swift */,
+				959014F827E85141002BBF23 /* FaceViewModel.swift */,
 				954E9BD427E838A0002E19EF /* Assets.xcassets */,
 				954E9BD627E838A0002E19EF /* Preview Content */,
 			);
@@ -280,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				954E9BD827E838A0002E19EF /* Preview Assets.xcassets in Resources */,
+				959014F327E84F69002BBF23 /* GoogleService-Info-3.plist in Resources */,
 				954E9BD527E838A0002E19EF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,6 +454,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				959014F727E85122002BBF23 /* FaceDetection.swift in Sources */,
+				959014F527E8510A002BBF23 /* ImagePicker.swift in Sources */,
+				959014F927E85141002BBF23 /* FaceViewModel.swift in Sources */,
 				954E9BD327E8389F002E19EF /* ContentView.swift in Sources */,
 				954E9BD127E8389F002E19EF /* FaceApp.swift in Sources */,
 			);
@@ -606,11 +621,14 @@
 				DEVELOPMENT_TEAM = HRA638G7C3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "The app needs your camera";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "we need photo";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -636,11 +654,14 @@
 				DEVELOPMENT_TEAM = HRA638G7C3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "The app needs your camera";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "we need photo";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

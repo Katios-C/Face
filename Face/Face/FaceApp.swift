@@ -1,9 +1,4 @@
-//
-//  FaceApp.swift
-//  Face
-//
-//  Created by Екатерина Чернова on 21.03.2022.
-//
+
 
 import SwiftUI
 
