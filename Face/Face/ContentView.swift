@@ -40,7 +40,7 @@ struct ContentView: View {
                 
                 
                 Button("Add smile") {
-                    if image != nil{
+                    if image != nil {
                     faceViewModel.fetectPoints(image: inputImage!)
                     isProccesed = true
                     }
