@@ -40,8 +40,13 @@ struct ContentView: View {
                 
                 
                 Button("Add smile") {
+                    if image != nil{
                     faceViewModel.fetectPoints(image: inputImage!)
                     isProccesed = true
+                    }
+                    else {
+                        print("No uploaded photo")
+                    }
                 }
                 .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 50)
                 .background(Color.blue)

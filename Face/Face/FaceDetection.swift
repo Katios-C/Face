@@ -104,7 +104,10 @@ class FaceDetection {
     func drawLogoIn(_ image: UIImage, _ logo: UIImage, position: CGPoint) -> UIImage {
         let size = CGSize(width: width, height: height)
         let renderer = UIGraphicsImageRenderer(size: image.size)
-        
+         
+        if position.x == 0 && position.y == 0 {
+            print("NO nose found")
+        }
         return renderer.image { context in
             image.draw(in: CGRect(origin: CGPoint.zero, size: image.size))
             logo.draw(in: CGRect(origin: position, size: size))
