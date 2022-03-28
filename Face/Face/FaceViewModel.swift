@@ -24,11 +24,15 @@ class FaceViewModel: ObservableObject {
     
     func fetectPoints(image: UIImage) {
         faceDetection.detectSetting(img: image)
+        print("fetectPoints")
+        print(point)
         
     }
 
     
     func drawImg(_ image: UIImage) -> UIImage {
+      //  fetectPoints(image: image)
+        print("drawImg")
         return faceDetection.drawLogoIn(image, UIImage(systemName: "face.smiling")!, position: point)
     }
     

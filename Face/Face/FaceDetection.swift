@@ -65,6 +65,9 @@ class FaceDetection {
                     self.noseX = nosePosition.x
                     self.noseY = nosePosition.y
                     self.nosePos?(nosePosition.x, nosePosition.y)
+                    
+                    print(self.noseX)
+                    print((self.noseY))
                 }
                 
                 
