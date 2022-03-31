@@ -21,6 +21,7 @@
 		959014F727E85122002BBF23 /* FaceDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959014F627E85122002BBF23 /* FaceDetection.swift */; };
 		959014F927E85141002BBF23 /* FaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959014F827E85141002BBF23 /* FaceViewModel.swift */; };
 		9590153027F16755002BBF23 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9590152F27F16755002BBF23 /* ImagePickerView.swift */; };
+		9590153227F2F3B9002BBF23 /* FaceDetectionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9590153127F2F3B9002BBF23 /* FaceDetectionError.swift */; };
 		D69DF900B1B677482808797F /* Pods_Face_FaceUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB00A78DDDB7DDEC290CBB1F /* Pods_Face_FaceUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,7 @@
 		959014F627E85122002BBF23 /* FaceDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceDetection.swift; sourceTree = "<group>"; };
 		959014F827E85141002BBF23 /* FaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceViewModel.swift; sourceTree = "<group>"; };
 		9590152F27F16755002BBF23 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		9590153127F2F3B9002BBF23 /* FaceDetectionError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceDetectionError.swift; sourceTree = "<group>"; };
 		9FCA6F881602834E66336E2E /* Pods-Face-FaceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Face-FaceUITests.debug.xcconfig"; path = "Target Support Files/Pods-Face-FaceUITests/Pods-Face-FaceUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C1F1491452AF45FB6067DF78 /* Pods-FaceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceTests.debug.xcconfig"; path = "Target Support Files/Pods-FaceTests/Pods-FaceTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CB00A78DDDB7DDEC290CBB1F /* Pods_Face_FaceUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Face_FaceUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,6 +155,7 @@
 				959014F827E85141002BBF23 /* FaceViewModel.swift */,
 				954E9BD427E838A0002E19EF /* Assets.xcassets */,
 				954E9BD627E838A0002E19EF /* Preview Content */,
+				9590153127F2F3B9002BBF23 /* FaceDetectionError.swift */,
 			);
 			path = Face;
 			sourceTree = "<group>";
@@ -461,6 +464,7 @@
 				959014F527E8510A002BBF23 /* ImagePicker.swift in Sources */,
 				959014F927E85141002BBF23 /* FaceViewModel.swift in Sources */,
 				954E9BD327E8389F002E19EF /* ContentView.swift in Sources */,
+				9590153227F2F3B9002BBF23 /* FaceDetectionError.swift in Sources */,
 				9590153027F16755002BBF23 /* ImagePickerView.swift in Sources */,
 				954E9BD127E8389F002E19EF /* FaceApp.swift in Sources */,
 			);
@@ -689,7 +693,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = HRA638G7C3;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ISSART.FaceTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -710,7 +714,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = HRA638G7C3;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ISSART.FaceTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

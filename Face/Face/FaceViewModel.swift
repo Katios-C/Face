@@ -12,19 +12,22 @@ class FaceViewModel: ObservableObject {
     var point = CGPoint(x: 0, y: 0)
     
     init() {
-        faceDetection.nosePos = {x, y in
+        faceDetection.nosePos = {x, y, error in
             DispatchQueue.main.async {
-                self.noseX = x
-                self.noseY = y
+//                self.point.x = 0
+//                self.point.y = 0
+                self.noseX = 0
+                self.noseY = 0
                 self.point.x = x - self.faceDetection.width / 2
                 self.point.y = y - self.faceDetection.height / 2
+              
             }
         }
     }
     
-    func fetectPoints(image: UIImage) {
+    func detectPoints(image: UIImage) {
         faceDetection.detectSetting(img: image)
-        print("fetectPoints")
+        print("detectPoints")
         print(point)
         
     }

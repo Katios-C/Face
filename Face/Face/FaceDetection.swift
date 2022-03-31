@@ -10,22 +10,29 @@ class FaceDetection {
     var width: CGFloat = 100
     var height: CGFloat = 100
     
-    var nosePos: ((_ x: CGFloat, _ y: CGFloat) -> ())?
+    var nosePos: ((_ x: CGFloat, _ y: CGFloat, _ error: Error?) -> ())?
     
     func detectSetting(img: UIImage) {
+        print("img.size")
+        print(img.size)
         
         let options = FaceDetectorOptions()
-        options.performanceMode = .accurate
+        options.performanceMode =  .accurate
         options.landmarkMode = .all
         options.classificationMode = .all
+    
         
         // Real-time contour detection of multiple faces
         options.contourMode = .all
         
+       
+        
         let image = VisionImage(image: img)
         
-        //  image.orientation = img.imageOrientation
-        
+        print("this is image: \(image)")
+        image.orientation = img.imageOrientation
+     
+    
         let faceDetector = FaceDetector.faceDetector(options: options)
         
         weak var weakSelf = self
@@ -36,9 +43,13 @@ class FaceDetection {
             }
             guard error == nil, let faces = faces, !faces.isEmpty else {
                 
+                print("Face is nil!")
+                print(error)
+                self.nosePos?(0, 0, FaceDetectionError.faceIsNil)
                 return
             }
-            
+            print("faces.count")
+            print(faces.count)
             // Faces detected
             
             for face in faces {
@@ -62,12 +73,12 @@ class FaceDetection {
                 if let nose = face.landmark(ofType: .noseBase){
                     let nosePosition = nose.position
                     
-                    self.noseX = nosePosition.x
-                    self.noseY = nosePosition.y
-                    self.nosePos?(nosePosition.x, nosePosition.y)
+//                    self.noseX = nosePosition.x
+//                    self.noseY = nosePosition.y
+                    self.nosePos?(nosePosition.x, nosePosition.y, nil)
                     
-                    print(self.noseX)
-                    print((self.noseY))
+                    print(nosePosition.x)
+                    print((nosePosition.y))
                 }
                 
                 
@@ -116,4 +127,9 @@ class FaceDetection {
             logo.draw(in: CGRect(origin: position, size: size))
         }
     }
+    
+    
+   
+    
+    
 }
