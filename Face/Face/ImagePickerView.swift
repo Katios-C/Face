@@ -10,6 +10,9 @@ struct ImagePickerView: UIViewControllerRepresentable {
     func makeUIViewController(context: Context) -> UIImagePickerController {
         let imagePicker = UIImagePickerController()
         imagePicker.sourceType = sourceType
+        imagePicker.allowsEditing = true
+        
+        
         imagePicker.delegate = context.coordinator // confirming the delegate
         return imagePicker
     }
@@ -38,4 +41,7 @@ class Coordinator: NSObject, UINavigationControllerDelegate, UIImagePickerContro
         self.picker.isPresented.wrappedValue.dismiss()
     }
     
+    
 }
+
+
